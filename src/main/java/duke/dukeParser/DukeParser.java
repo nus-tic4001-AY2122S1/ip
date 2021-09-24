@@ -21,6 +21,8 @@ public class DukeParser{
                 return new DeleteCommand(input[1]);
             case "done":
                 return new DoneCommand(input[1]);
+            case "find":
+                return new FindCommand(input[1]);
             case "bye":
                 return new ByeCommand("");
             default:
