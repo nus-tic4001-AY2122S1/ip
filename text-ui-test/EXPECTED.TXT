@@ -5,3 +5,12 @@ Hello from
 | |_| | |_| |   <  __/
 |____/ \__,_|_|\_\___|
 
+____________________________________________________
+Hello! I am Duke
+What can I do for you?
+____________________________________________________
+todo borrow book
+____________________________________________________
+Got it. I've added this task:
+[T]["\u2718"] borrow book
+Now you have 1 tasks in the list.

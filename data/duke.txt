@@ -1,0 +1,8 @@
+D|1|return book|2021-08-05 1005|2021-08-01 1800
+T|1|go exercising|2021-09-05 2229
+T|0|borrow book|
+E|0|tba2105 project group discussion|2021-09-14 1800|
+D|1|write proposal for project A|2021-09-30 1800|2021-09-25 1814
+E|0|tba4001 project group discussion|2021-09-15 1800|
+E|0|project A group discussion|2021-09-14 1800|
+E|1|project meeting|2021-06-22 1200|2021-03-14 1721
