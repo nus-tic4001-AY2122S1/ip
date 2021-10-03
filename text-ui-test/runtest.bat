@@ -1,5 +1,8 @@
 @ECHO OFF
 
+REM ensuring that CMD is running in the correct mode. refer to https://stackoverflow.com/questions/20386335/printing-out-unicode-from-java-code-issue-in-windows-console
+chcp 65001
+
 REM create bin directory if it doesn't exist
 if not exist ..\bin mkdir ..\bin
 
@@ -15,7 +18,7 @@ IF ERRORLEVEL 1 (
 REM no error here, errorlevel == 0
 
 REM run the program, feed commands from input.txt file and redirect the output to the ACTUAL.TXT
-java -classpath ..\bin Duke < input.txt > ACTUAL.TXT
+java -Dfile.encoding=UTF-8 -classpath ..\bin Duke < input.txt > ACTUAL.TXT
 
 REM compare the output to the expected output
 FC ACTUAL.TXT EXPECTED.TXT

@@ -1,24 +1,67 @@
-# Duke project template
+# Duke Nuke Em Helper Program
 
-This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
+***Written in Java!*** :coffee:
 
-## Setting up in Intellij
+## System.in.Writeln is your friend!
+[Documentation here!](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html)
+```java
+ class DemoClass{
+    public static void printMsg(String s){
+       System.out.println(s);
+    }    
+}
+```
 
-Prerequisites: JDK 11, update Intellij to the most recent version.
+## Key classes in `/src/main/java`
+> │   Duke.java  
+> │  
+> ├───command  
+> │       CheckCommand.java  
+> │       Command.java  
+> │       ExitCommand.java  
+> │       FindCommand.java  
+> │       ListCommand.java  
+> │       UpdateCommand.java  
+> │  
+> ├───exception  
+> │       DukeException.java  
+> │       DukeMissingDescException.java  
+> │       DukeMissingParamException.java    
+> │       DukeUnknownException.java  
+> │  
+> ├───storage  
+> │       Storage.java  
+> │  
+> ├───task  
+> │       Deadline.java  
+> │       Event.java  
+> │       Parser.java  
+> │       Task.java  
+> │       TaskList.java  
+> │       ToDo.java  
+> │  
+> ├───ui  
+> │       Ui.java
 
-1. Open Intellij (if you are not in the welcome screen, click `File` > `Close Project` to close the existing project first)
-1. Open the project into Intellij as follows:
-   1. Click `Open`.
-   1. Select the project directory, and click `OK`.
-   1. If there are any further prompts, accept the defaults.
-1. Configure the project to use **JDK 11** (not other versions) as explained in [here](https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk).<br>
-   In the same dialog, set the **Project language level** field to the `SDK default` option.
-3. After that, locate the `src/main/java/Duke.java` file, right-click it, and choose `Run Duke.main()` (if the code editor is showing compile errors, try restarting the IDE). If the setup is correct, you should see something like the below as the output:
-   ```
-   Hello from
-    ____        _        
-   |  _ \ _   _| | _____ 
-   | | | | | | | |/ / _ \
-   | |_| | |_| |   <  __/
-   |____/ \__,_|_|\_\___|
-   ```
+## Task List
+- [ ] Coding Standard
+- [ ] Code Quality
+- [ ] Packages
+- [ ] Level 6
+- [ ] Level 7
+- [ ] Level 8
+- [ ] Level 9
+- [ ] More OOP
+- [ ] Jar
+- [ ] J-Unit
+- [ ] Java Docs
+
+
+## Why C#/.NET is superior
+1) has properties, doesn't need to use getter and setter methods
+2) More readable imo, better documentation by Microsoft
+
+## Bullet List..?
+
+- Done by Ivan Ho Lye Boon
+- For TIC4001 Individual Project AY2021/2022
