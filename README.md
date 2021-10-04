@@ -22,3 +22,24 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
    | |_| | |_| |   <  __/
    |____/ \__,_|_|\_\___|
    ```
+   
+**text-based scheduler**
+
+_easy to learn_
+
+* SUPER FAST to use
+
+* All you need to do is,
+
+download it from here.
+
+1. double-click it.
+2. add your tasks.
+3. let it manage your tasks for you 😉
+4. And it is FREE!
+
+###Features:###
+
+- Managing tasks
+- Managing deadlines
+- Reminders
