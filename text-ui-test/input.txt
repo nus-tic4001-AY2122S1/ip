@@ -1,0 +1,14 @@
+todo
+deadline
+deadline return book
+event meeting with John
+done 1
+done1
+todo read book
+deadline return book /by 24/Spt
+event meeting with John /at 3pm 24/Sept
+list
+done 1
+done 3
+list
+bye

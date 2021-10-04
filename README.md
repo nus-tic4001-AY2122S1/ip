@@ -15,10 +15,27 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
    In the same dialog, set the **Project language level** field to the `SDK default` option.
 3. After that, locate the `src/main/java/Duke.java` file, right-click it, and choose `Run Duke.main()` (if the code editor is showing compile errors, try restarting the IDE). If the setup is correct, you should see something like the below as the output:
    ```
-   Hello from
-    ____        _        
-   |  _ \ _   _| | _____ 
-   | | | | | | | |/ / _ \
-   | |_| | |_| |   <  __/
-   |____/ \__,_|_|\_\___|
+     ____________________________________________________________
+          Hello! I'm Duke
+          can I do for you?
+     ____________________________________________________________
    ```
+
+## Project description
+This is a Java program which helps users to keep track their tasks. There are three different tasks, the program capable of keeping tack.
+- Todo: A simple todo task
+- Deadline: A task with specific deadline
+- Event: A task with specific timing
+
+User could also mark task as done to keep track the status of the task.
+
+## User guide
+User should interact with the software through terminal with these key-words:
+1. List - display the list of task including the status of the task status
+2. Todo - to add a todo task
+3. Deadline - to add a deadline task
+4. Event - to add an event task
+5. Done - to mark task as done
+6. Delete - to delete a task
+7. Find - to find tasks that matches the given search word
+8. Bye - exit the program
