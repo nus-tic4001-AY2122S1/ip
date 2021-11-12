@@ -5,6 +5,7 @@ import duke.task.Event;
 import duke.task.Task;
 import duke.task.ToDo;
 import duke.exception.ErrorHandler;
+import duke.command.DeleteCommand;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -69,6 +70,13 @@ public class Duke {
             case ("bye"):
                 System.out.println("See you!");
                 return true;
+
+            case ("delete"):
+                if (result < 2) {
+                    System.out.println(" ☹ OOPS!!! Please indicate task number.");
+                }
+                //return new DeleteCommand(line);
+                break;
 
             default:
                 throw new ErrorHandler(" ☹ OOPS!!! I'm sorry, but I don't know what that means :-(");
