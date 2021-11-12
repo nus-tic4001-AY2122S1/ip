@@ -1,23 +1,23 @@
-package task;
+package duke.task;
 
 public abstract class Task {
     protected String description;
-    protected boolean Done;
+    protected boolean done;
 
     public Task(String description) {
         this.description = description;
-        this.Done = false;
+        this.done = false;
     }
 
     public String getStatus() {
-        return (Done ? "X" : " ");
+        return (done ? "X" : " ");
     }
 
-    public void markAsDone(){
-        Done = true;
+    public void markAsDone() {
+        done = true;
     }
 
-    public String getTask(){
+    public String getTask() {
         return description;
     }
 
