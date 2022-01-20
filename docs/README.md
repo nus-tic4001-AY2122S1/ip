@@ -1,29 +1,13 @@
-# User Guide
+## NUS TIC4001  Project Duke
 
-## Features 
+To add a "todo" item: input in the format `todo <task to do>`, for example `todo borrow book`. 
 
-### Feature-ABC
+To add a deadline item, input in the format `deadline <task> /by <time>`, for example `deadline return book /by Sunday`
 
-Description of the feature.
+To add an event item, input in the format `event <task> /at <start time>-<end time>`, for example `event project meeting /at Mon 2-4pm`
 
-### Feature-XYZ
+To list all existing items, enter `list` 
 
-Description of the feature.
+To toggle an item's 'done' status, use `done <index>`, for example `done 0` will toggle item 0. Use `list` to see the list lof items with their index.
 
-## Usage
-
-### `Keyword` - Describe action
-
-Describe the action and its outcome.
-
-Example of usage: 
-
-`keyword (optional arguments)`
-
-Expected outcome:
-
-Description of the outcome.
-
-```
-expected output
-```
+To delete an item from the list, use `delete <index>`, for example `delete 1`.

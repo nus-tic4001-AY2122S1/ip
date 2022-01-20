@@ -22,3 +22,9 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
    | |_| | |_| |   <  __/
    |____/ \__,_|_|\_\___|
    ```
+
+
+# Run automated tests
+
+1. navigate to text-ui-test folder
+2. `./runtest.sh`

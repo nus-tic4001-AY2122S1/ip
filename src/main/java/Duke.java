@@ -1,10 +1,24 @@
+import Duke.Task.Task;
+import Duke.Task.TaskList;
+import Duke.exceptions.DukeException;
+
+import java.util.ArrayList;
+
 public class Duke {
-    public static void main(String[] args) {
-        String logo = " ____        _        \n"
-                + "|  _ \\ _   _| | _____ \n"
-                + "| | | | | | | |/ / _ \\\n"
-                + "| |_| | |_| |   <  __/\n"
-                + "|____/ \\__,_|_|\\_\\___|\n";
-        System.out.println("Hello from\n" + logo);
+    public static void main(String[] args) throws DukeException {
+
+        Operations operations = new Operations();
+        Interactor interactor = new Interactor();
+        TaskList taskList = new TaskList(new ArrayList<Task>());
+
+        console.log('Test');
+        
+        operations.setDatabase(taskList);
+        interactor.setOperations(operations);
+
+        interactor.setExitKeyword("bye");
+        interactor.setDoneKeyword("done");
+
+        interactor.start();
     }
 }

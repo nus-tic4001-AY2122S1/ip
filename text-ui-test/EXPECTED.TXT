@@ -1,7 +1,13 @@
-Hello from
- ____        _        
-|  _ \ _   _| | _____ 
-| | | | | | | |/ / _ \
-| |_| | |_| |   <  __/
-|____/ \__,_|_|\_\___|
-
+Dunder Mifflin, this is Pam
+Please type bye if you want to exit.
+You have added: [ ]: [T] borrow book
+0: [ ]: [T] borrow book
+You have added: [ ]: [E] visit home  (from:  4  to  19)
+0: [ ]: [T] borrow book
+1: [ ]: [E] visit home  (from:  4  to  19)
+0: [x]: [T] borrow book
+1: [x]: [E] visit home  (from:  4  to  19)
+You have tried to delete or done an item not in the list. Please choose a number from the list.
+Deleted successfully 1
+0: [x]: [T] borrow book
+Okay bye
