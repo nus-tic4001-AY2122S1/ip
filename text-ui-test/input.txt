@@ -1,0 +1,10 @@
+todo borrow book
+list
+deadline return book /by Friday
+list
+done 2
+list
+event attend meeting /at 3.30pm - 5pm
+list
+abcdefg
+bye

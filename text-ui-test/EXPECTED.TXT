@@ -5,3 +5,41 @@ Hello from
 | |_| | |_| |   <  __/
 |____/ \__,_|_|\_\___|
 
+what can i do for you?
+
+Got it. I've added this task:
+    [T][ ]borrow book
+Now you have 1 tasks in the list.
+
+Here are the tasks in your list:
+1.[T][ ]borrow book
+
+Got it. I've added this task:
+    [D][ ]return book (by:  Friday)
+Now you have 2 tasks in the list.
+
+Here are the tasks in your list:
+1.[T][ ]borrow book
+2.[D][ ]return book (by:  Friday)
+
+Nice! I've marked this task as done:
+    [D][✘]return book (by:  Friday)
+
+Here are the tasks in your list:
+1.[T][ ]borrow book
+2.[D][✘]return book (by:  Friday)
+
+Got it. I've added this task:
+    [E][ ]attend meeting (at:  3.3pm - 5pm)
+Now you have 3 tasks in the list.
+
+Here are the tasks in your list:
+1.[T][ ]borrow book
+2.[D][✘]return book (by:  Friday)
+3.[E][ ]attend meeting (at:  3.3pm - 5pm)
+
+You have enter an invalid input!!!
+bye
+Bye.Hope to see you again soon!
+
+Process finished with exit code 0

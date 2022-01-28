@@ -1,0 +1,9 @@
+T | 1 | read book
+D | 1 | return book | 30-04-2022 14:00:00
+E | 0 | project meeting | 3-06-2021 13:00:00
+T | 1 | join sports club
+T | 0 | play game
+D | 0 | stop play | 10-08-2022 11:00:00
+D | 0 | start work | 13-05-2022 05:00:00
+T | 1 | read book
+E | 0 | meeting | 12-06-2022 10:00:00
