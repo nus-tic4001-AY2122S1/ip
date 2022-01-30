@@ -2,6 +2,15 @@
 
 This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
 
+## Set Up
+To compile the java files:
+
+`javac -d bin_folder src\main\java\*.java src\main\java\commands\*.java src\main\java\exceptions\*.java src\main\java\parser\*.java src\main\java\storage\*.java src\main\java\tasks\*.java src\main\java\ui\*.java` 
+
+To run the file:
+
+`java -classpath bin_folder Duke`
+
 ## Setting up in Intellij
 
 Prerequisites: JDK 11, update Intellij to the most recent version.
