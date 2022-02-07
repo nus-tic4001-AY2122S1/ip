@@ -5,3 +5,65 @@ Hello from
 | |_| | |_| |   <  __/
 |____/ \__,_|_|\_\___|
 
+Hello! I'm LisGenie
+What can I do for you?
+
+MasterOm :           _________________________________________________________________
+LisGenie : Got it. I've added this task:
+             [T][ ] borrow book
+           Now you have 1 task in the list.
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Here are the tasks in your list:
+           1.[T][ ] borrow book
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Got it. I've added this task:
+             [D][ ] return book (by: Friday)
+           Now you have 2 tasks in the list.
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Here are the tasks in your list:
+           1.[T][ ] borrow book
+           2.[D][ ] return book (by: Friday)
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Nice! I've marked this task as done:
+             [X] return book (by: Friday)
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Here are the tasks in your list:
+           1.[T][ ] borrow book
+           2.[D][X] return book (by: Friday)
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Got it. I've added this task:
+             [E][ ] attend church meeting (at: 2.30pm - 5pm)
+           Now you have 3 tasks in the list.
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Nice! I've marked this task as done:
+             [X] borrow book
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Here are the tasks in your list:
+           1.[T][X] borrow book
+           2.[D][X] return book (by: Friday)
+           3.[E][ ] attend church meeting (at: 2.30pm - 5pm)
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : An incorrect command, Master?
+          _________________________________________________________________
+
+MasterOm :           _________________________________________________________________
+LisGenie : Bye. Hope to see you again soon!
+          _________________________________________________________________

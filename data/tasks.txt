@@ -1,0 +1,16 @@
+E # 1 # exhibit # 2.30pm
+D # 1 # return book # June 6th
+D # 1 # attend exam # Fri noon
+E # 1 # attend a movie # 2.30pm HUB
+E # 1 # Zoom meeting # 3pm Fri
+D # 0 # submit the TIC4001 UG # Oct 1 2021
+E # 1 # attend a meeting # Fri 2 - 3.30pm
+E # 1 # attend another meeting # Dec 2 2021
+D # 0 # return a magazine # Sep 1 2021
+E # 0 # attend exhibit C # Jan 1 2021
+T # 1 # borrow another book
+E # 1 # attend rally # Sep 29 2021
+E # 0 # attend exhibition Expo@Changi venue # 2-4:30pm Fri
+E # 1 # attend rally # Sep 25 2021
+D # 1 # write a book # Sep 23 2021
+T # 0 # borrow JavaFx Textbook 2022
