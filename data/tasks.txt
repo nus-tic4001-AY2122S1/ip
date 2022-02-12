@@ -1,0 +1,8 @@
+T | 1 | sleep
+D | 1 | return books | 2021-12-11 23:59
+T | 1 | read book
+T | 0 | have dinner
+D | 1 | submit homeword | 2021-12-22 23:59
+T | 0 | buy books
+E | 0 | project meeting | 2021-12-31 11:00 | 2021-12-31 12:00
+D | 1 | return cash | 2021-11-11 23:59

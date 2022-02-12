@@ -1,0 +1,4 @@
+D | 0 | return money to Micheal | 2022-02-11 23:00
+E | 0 | Birthday Party | 2022-02-10 18:00 | 2022-02-11 03:30
+T | 0 | return book
+T | 0 | take taxi
