@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>:Duke" As Duke
+object "<u>:Ui" As Ui
+object "<u>:TaskList" As TaskList
+object "<u>:Storage" As Storage
+object "<u>e1:Event" As Event {
+description = Best Friend Wedding
+isDone = FALSE
+taskDate = 22/02/2022
+}
+object "<u>t1:ToDo" As ToDo{
+description = buy a wedding gift
+isDone = TRUE
+}
+object "<u>d1:Deadline" As Deadline{
+description = TIC4002 IP
+isDone = TRUE
+taskDate = 20/02/2022
+}
+
+Ui - Duke
+Duke  -- TaskList
+Duke - Storage
+TaskList --> Event
+TaskList -->  ToDo
+TaskList -->  Deadline
+
+
+
+@enduml

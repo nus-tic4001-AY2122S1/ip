@@ -1,0 +1,7 @@
+todo lol
+event lol /at sep
+deadline event /by today
+list
+done 3
+list
+bye

@@ -1,0 +1,14 @@
+diff a/src/main/java/Duke.java b/src/main/java/Duke.java	(rejected hunks)
+@@ -242,6 +242,12 @@
+         throw new DukeException("Unknown task Type");
+     }
+ 
++=======
++
++    /**
++     * this function will run the Duke program
++     */
++>>>>>>> branch-A-JavaDoc
+     public void run() {
+         System.out.println("Hello! I'm Duke \n  " +
+                 "What can I do for you?");

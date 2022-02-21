@@ -1,0 +1,47 @@
+@startuml
+!include style.puml
+
+
+Actor User as user USER_COLOR
+Participant ":MainWindow" as ui UI_COLOR
+Participant ":Duke" as duke DUKE_COLOR
+Participant ":Parser" as parser LOGIC_COLOR
+Participant ":Command" as command MODEL_COLOR
+Participant ":TaskList" as taskList STORAGE_COLOR
+
+
+activate ui UI_COLOR
+
+
+user -[USER_COLOR]> ui : "list"
+
+ui -[UI_COLOR]> duke : getResponse("list")
+
+activate duke DUKE_COLOR
+
+
+duke -[DUKE_COLOR]> parser : parse("list")
+activate parser LOGIC_COLOR
+
+parser --[LOGIC_COLOR]> duke
+deactivate parser
+
+duke -[DUKE_COLOR]> command : execute
+activate command MODEL_COLOR
+
+command -[MODEL_COLOR]> taskList: getTask()
+activate taskList STORAGE_COLOR
+taskList --[LOGIC_COLOR]> command
+deactivate taskList
+
+command --[LOGIC_COLOR]> duke
+deactivate command
+
+duke --[LOGIC_COLOR]> ui
+deactivate duke
+
+ui --[LOGIC_COLOR]> user
+deactivate ui
+
+
+@enduml

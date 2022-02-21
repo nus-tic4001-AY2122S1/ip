@@ -1,29 +1,31 @@
-# User Guide
+# Duke
 
-## Features 
+> A wise man once said "To plan is to organise"
 
-### Feature-ABC
+Duke frees your mind of having to remember things you need to do. It's,
 
-Description of the feature.
+- text-based
+- easy to learn
+- ~~FAST~~ SUPER FAST to use
 
-### Feature-XYZ
+All you need to do is,
 
-Description of the feature.
+1. download it from [here](https://github.com/IcyNoPeople/ip).
+2. double-click it.
+3. add your tasks.
+4. let it manage your tasks for you 😉
 
-## Usage
+And it is **FREE**!
 
-### `Keyword` - Describe action
+Features:
 
-Describe the action and its outcome.
+- [x] Managing tasks
+- [x] Managing deadlines
+- [x] Schedule events
 
-Example of usage: 
+How Duke looks like:  
+<img src=Ui.png width="400">
 
-`keyword (optional arguments)`
-
-Expected outcome:
-
-Description of the outcome.
-
-```
-expected output
-```
+Useful links:
+* [User Guide](UserGuide.md)
+* [Developer Guide](DeveloperGuide.md)

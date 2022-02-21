@@ -1,0 +1,4 @@
+1 | E | 0 | Dinner and Dance | 2021-09-23
+2 | D | 0 | school fees | 2021-09-24
+3 | T | 0 | Study for exam
+4 | T | 0 | Workout

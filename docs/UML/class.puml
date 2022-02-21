@@ -1,0 +1,113 @@
+@startuml
+hide circle
+
+abstract class  "{abstract}\nTask" As Task{
+description:String
+isDone:Boolean
+toString():String
+}
+abstract class "{abstract}\nCommand" As Command{
+commandInstruction:String
+execute(TaskList, Ui, Storage)
+}
+class Launcher{
+main()
+}
+class Main{
+start(Stage)
+}
+class MainWindow{
+initialize()
+handleUserInput()
+}
+class Duke{
+createInstance()
+getResponse()
+}
+class DialogBox{
+getUserDialog(String, Image)
+getDukeDialog(String, Image)
+}
+class Ui{
+showDukeWelcome()
+}
+class Storage{
+filePath:String
+save(TaskList)
+load():ArrayList<Task>
+}
+class ToDo
+class Event{
+taskDate:LocalDate
+hasTime:Boolean
+taskTime:LocalTime
+}
+class Deadline{
+taskDate:LocalDate
+hasTime:Boolean
+taskTime:LocalTime
+}
+class TaskList {
+ArrayList<> tasks
+getSize()
+clearAll()
+addTask(Task)
+remove(int)
+}
+class Parser{
+parse(String):Command
+}
+class ToDoCommand
+class OtherCommand
+class ListCommand
+class FindCommand
+class ExitCommand
+class DeleteCommand
+class DeadlineCommand
+class DoneCommand
+class EventCommand
+class CommandResult{
+feedbackToUser:String
+getFeedbackToUser():String
+}
+
+Main <-- Launcher
+MainWindow <-- Main
+
+Duke -> Duke
+MainWindow -> Duke
+Main -> Duke
+MainWindow -> DialogBox
+
+Ui <-- Duke
+Duke -> Parser
+Duke --> TaskList
+Duke --> Storage
+
+Duke -> CommandResult
+
+
+Parser -> Command
+Command <|--- ToDoCommand
+Command <|--- OtherCommand
+Command <|- ListCommand
+Command <|-- FindCommand
+Command <|-- ExitCommand
+Command <|--- DeleteCommand
+DeadlineCommand --|> Command
+DoneCommand --|> Command
+EventCommand --|> Command
+
+TaskList --> Task
+
+enum TaskType {
+TODO
+EVENT
+DEADLINE
+}
+TaskType <- Task
+Task <|-- Event
+Task <|-- Deadline
+Task <|-- ToDo
+
+@enduml
