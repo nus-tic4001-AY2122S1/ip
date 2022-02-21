@@ -1,0 +1,4 @@
+D|1|return book|2/12/2021 1800
+E|0|project meeting|2/12/2021 1700
+T|0|borrow book
+T|0|submit post-lecture quiz
