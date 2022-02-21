@@ -8,7 +8,7 @@
 
 Refer to the guide [_Setting up and getting started_](SettingUp.md).
 
-#Design
+# Design
 The Design consist of different classes and component like Ui, Storage, Parser, TaskList, MainWindow and Duke.
 
 ### Sequence Diagram
