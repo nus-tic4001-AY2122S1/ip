@@ -1,28 +1,23 @@
 # User Guide
 
 ## Features 
+There are features like 
+To do
+Event 
+Deadline
 
 ### Feature-ABC
 
-Description of the feature.
-
-### Feature-XYZ
-
-Description of the feature.
+To do - can add to do tasks
+Event - can add events that needs to be attended
+Deadline - can add deadlines to "todo" or events
 
 ## Usage
 
-### `Keyword` - Describe action
+### `To Do` - can add to do tasks
+### `Event` - can add events that needs to be attended
+### `Deadline` - can add deadlines to "todo" or events
 
-Describe the action and its outcome.
-
-Example of usage: 
-
-`keyword (optional arguments)`
-
-Expected outcome:
-
-Description of the outcome.
 
 ```
 expected output
