@@ -1,0 +1,9 @@
+T | 1 | read book
+D | 0 | return book | June 6th
+E | 0 | project meeting | Aug 6th 2-4pm
+T | 1 | join sports club
+T | 1 | hello
+T | 1 | hello 3
+T | 0 | hello 2
+D | 0 | Project A | 5th Aug
+E | 0 | Movie | 5th Aug 5pm

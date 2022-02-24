@@ -1,29 +1,10 @@
-# User Guide
+# Duke
 
-## Features 
+Duke is a task tracker specifically built for computing students that are comfortable with the CLI.
+Working on improving and adding features to the existing Duke project and making it useful for students to manage their schedule and work.
+Natural language will be implemented to avoid exceptions due to typing errors.
 
-### Feature-ABC
-
-Description of the feature.
-
-### Feature-XYZ
-
-Description of the feature.
-
-## Usage
-
-### `Keyword` - Describe action
-
-Describe the action and its outcome.
-
-Example of usage: 
-
-`keyword (optional arguments)`
-
-Expected outcome:
-
-Description of the outcome.
-
-```
-expected output
-```
+Useful links:
+* [User Guide](UserGuide.md)
+* [Developer Guide](DeveloperGuide.md)
+* [About Us](AboutUs.md)
