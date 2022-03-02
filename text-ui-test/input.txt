@@ -1,0 +1,10 @@
+todo task 1
+todo task b
+todo task c
+todo task 4
+todo task e
+done 2 4
+list
+delete 5 2
+list
+bye

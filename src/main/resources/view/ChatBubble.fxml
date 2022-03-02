@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<fx:root alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="7.0" stylesheets="@Theme.css" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <StackPane fx:id="bubble" alignment="TOP_RIGHT" minHeight="-Infinity" minWidth="44.0" prefWidth="260.0">
+         <children>
+            <Rectangle fx:id="bbg" arcHeight="12.0" arcWidth="12.0" fill="DODGERBLUE" height="25.0" opacity="0.31" stroke="#3d5061" strokeType="INSIDE" strokeWidth="0.0" width="220.0">
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </Rectangle>
+              <Label fx:id="dialog" alignment="TOP_RIGHT" minHeight="-Infinity" minWidth="30.0" stylesheets="@../../../../../ip/src/main/resources/view/Theme.css" text="let me test test long long long long long message" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+               <padding>
+                  <Insets bottom="7.0" left="9.0" right="9.0" top="7.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="12.0" />
+         </padding>
+         <HBox.margin>
+            <Insets left="2.0" right="2.0" />
+         </HBox.margin>
+      </StackPane>
+      <StackPane fx:id="head" alignment="TOP_RIGHT" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="58.0">
+         <children>
+            <Circle fx:id="pbg" fill="#ebd8e1" radius="29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fx:id="emoji" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+               <image>
+                  <Image url="@../image/user.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets top="15.0" />
+               </StackPane.margin>
+            </ImageView>
+         </children>
+      </StackPane>
+    </children>
+    <padding>
+        <Insets bottom="6.0" left="10.0" right="10.0" top="6.0" />
+    </padding>
+</fx:root>

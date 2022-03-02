@@ -1,29 +1,13 @@
-# User Guide
+# ip
+## Duke Intro
+Duke is a desktop app for managing your daily tasks with a beautiful chatbot _graphical user interface_ (GUI) and _command line interface_ (CLI) like command input.
 
-## Features 
+## Content
 
-### Feature-ABC
+| [User Guide](./UserGuide.md) |
+| [Developer Guide](./DeveloperGuide.md) |
+| [Releases](https://github.com/l-shihao/ip/releases) |
 
-Description of the feature.
+## Sample Screenshot
+<img src="Ui.png" width="600">
 
-### Feature-XYZ
-
-Description of the feature.
-
-## Usage
-
-### `Keyword` - Describe action
-
-Describe the action and its outcome.
-
-Example of usage: 
-
-`keyword (optional arguments)`
-
-Expected outcome:
-
-Description of the outcome.
-
-```
-expected output
-```

@@ -1,0 +1,208 @@
+@startuml
+
+class Duke {
+    -tasks : TempTaskList
+    -storage : Storage
+    -commandFactory : CommandFactory
+    -stringparser : Stringparser
+    -commandCaller : CommandCaller
+
+    +Duke()
+    +getRespond(userInput: String)
+}
+
+class MainApp {
+    -duke : Duke
+
+    +start(stage : Stage)
+}
+
+class Laucher {
+    +{static}main
+
+}
+
+
+abstract class Application {
+    +start(stage : Stage)
+}
+
+Application <|-- MainApp
+MainApp --> Duke
+Laucher --> Application
+Laucher --> MainApp
+
+
+package duke.command {
+    interface Command {
+        +run(args : String[ ])
+    }
+
+    class CommandCaller {
+        -commandFactory : CommandFactory
+
+        +runCommand(cmd : Command, args : String[ ])
+        +propertyChange(evt PropertyChangeEvent)
+    }
+
+    class CommandFactory {
+        -commands : HashMap{String, Command}
+        -list TempTaskList
+    }
+
+
+    Duke --> CommandFactory
+    Duke --> CommandCaller
+    CommandCaller --> CommandFactory
+    Command <|-- AllCommandCmd
+    Command <|-- TodoCreationCmd
+    Command <|-- DlCreationCreationCmd
+    Command <|-- EventCreationCmd
+    Command <|-- TaskDeleteCmd
+    Command <|-- TaskMarkDoneCmd
+    Command <|-- FindCmd
+    Command <|-- TagCmd
+    CommandFactory ..> Command
+
+
+
+}
+
+package duke.exception {
+    abstract class DukeException {
+    }
+    class Exception {
+       +getMessage()
+    }
+    DukeException --|> Exception
+    InvalidArgsException --|> DukeException
+    NoDateException --|> DukeException
+    NumArgsException --|> DukeException
+    UnknownCommandException --|> DukeException
+}
+
+package duke.parse {
+    class Stringparser {
+        -keyArgs : String[ ]
+        -support : PropertyChangeSupport
+
+        +passToCaller(line : String)
+        +removeFirst(xxs String[ ])
+        +join(args : String[ ])
+        +stringToTask(line : String)
+        +parseEvent(args : String[ ])
+        +parseDL(args : String[ ])
+        +getTime(part: String)
+        +getTags(title : String)
+        +addPropertyChangeListener(pcl : PropertyChangeListener)
+    }
+
+    Duke --> Stringparser
+
+    DukeException <.. Stringparser
+    Stringparser <.. AllCommandCmd
+    Stringparser <.. TodoCreationCmd
+    Stringparser <.. DlCreationCreationCmd
+    Stringparser <.. EventCreationCmd
+    Stringparser <.. TaskDeleteCmd
+    Stringparser <.. TaskMarkDoneCmd
+    Stringparser <.. FindCmd
+    Stringparser <.. TagCmd
+}
+
+package duke.task {
+    abstract class Task {
+    }
+    Todo --|> Task
+    Event --|> Task
+    Deadline --|> Task
+}
+
+package duke.ui {
+    class Message {
+        -{static}buffer : String
+
+        +Message()
+        +{static}getBuffer()
+        +{static}setBuffer()
+        +{static}appendBuffer()
+        +{static}emptyList()
+        +{static}taskAdd(tasks : TempTaskList)
+        +{static}taskDone(tasks : TempTaskList)
+        +{static}taskDelete(tasks : TempTaskList)
+        +{static}taskTagged(tasks : TempTaskList)
+        +{static}tellTasNum(numTask : int, numDoneTask : int)
+        +{static}exceptionUnknownCommand()
+        +{static}exceptionNumArgs()
+        +{static}exceptionInvalidArgs()
+        +{static}exceptionNoDate()
+        +{static}greeting()
+    }
+
+
+
+    class MainWindow {
+        +MainWindow(stage : Stage, duke : Duke)
+    }
+
+    class ChatBubble {
+    }
+
+    MainApp --> MainWindow
+    MainWindow --> ChatBubble
+    MainWindow --> Duke
+
+    InvalidArgsException   ..> Message
+    NoDateException        ..> Message
+    NumArgsException       ..> Message
+    UnknownCommandException..> Message
+
+    Message <.. AllCommandCmd
+    Message <.. TodoCreationCmd
+    Message <.. DlCreationCreationCmd
+    Message <.. EventCreationCmd
+    Message <.. TaskDeleteCmd
+    Message <.. TaskMarkDoneCmd
+    Message <.. FindCmd
+    Message <.. TagCmd
+}
+
+
+package duke.storage {
+    class TempList {
+        #list : ArrayList<T>
+        #support : PropertyChangeSupport
+
+        +addPropertyChangeListener(pcl : PropertyChangeListener)
+    }
+
+    class TempTaskList {
+    }
+    class Storage {
+        -{static}DEFAULT_PATH : Path
+        -{static}FILE : Path
+        +listInit(tasks : TempTaskList)
+        +writeFromTaskList(tasks : TempTaskList)
+        +propertyChange(evt : PropertyChangeEvent)
+    }
+    Duke --> TempTaskList
+    Duke --> Storage
+    TempTaskList --|> TempList
+    Message ..> TempTaskList
+    Storage ..> TempTaskList
+    CommandFactory --> TempTaskList
+    TempTaskList ..> Task
+
+}
+
+
+Stringparser <--> CommandCaller
+
+
+
+
+
+
+
+
+@enduml

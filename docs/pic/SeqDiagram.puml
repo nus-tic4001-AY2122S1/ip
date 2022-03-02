@@ -1,0 +1,36 @@
+@startuml
+!include styleLsh.puml
+
+box Seq Diagram of \nGet user input to trigger a command\n LOGIC_COLOR
+
+participant ":MainWindow" as MainWindow
+participant "duke: Duke" as Duke LOGIC_COLOR_G
+participant ":StringParser" as StringParser LOGIC_COLOR_G
+participant ":CommandCaller" as CommandCaller LOGIC_COLOR_G
+participant ":CommandFactory" as CommandFactory LOGIC_COLOR_G
+participant ":ConcreteCommand" as ConcreteCommand LOGIC_COLOR_G
+
+MainWindow -> Duke: getRespond(input)
+
+Duke -> StringParser: passToCaller(input)
+
+StringParser -> StringParser: support.firePropertyChange()
+
+CommandCaller -> CommandCaller: propertyChange()
+
+CommandCaller -> CommandCaller: runCommand
+
+CommandCaller -> CommandFactory: get(key)
+
+CommandFactory -> ConcreteCommand: new ConcreteCommand()
+
+ConcreteCommand --> CommandFactory
+
+CommandFactory --> CommandCaller
+
+CommandCaller -> ConcreteCommand: run( )
+
+CommandCaller --> CommandCaller
+
+@enduml
+
